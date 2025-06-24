@@ -1,4 +1,4 @@
-# DevOps Intern Assignment
+ DevOps Intern Assignment
 
 This project demonstrates a multi-service application using Docker and Docker Compose. It consists of:
 
@@ -9,7 +9,20 @@ This project demonstrates a multi-service application using Docker and Docker Co
 ---
 
 ## 🧱 Project Structure
-
+DevOps-intern-assignment/
+├── docker-compose.yml
+├── nginx/
+│   ├── Dockerfile
+│   └── nginx.conf
+├── service_1/          # Golang application
+│   ├── Dockerfile
+│   ├── main.go
+│   └── README.md
+├── service_2/          # Python (Flask) application
+│   ├── Dockerfile
+│   ├── app.py
+│   └── README.md
+└── README.md           # (This file)
 
 
 
