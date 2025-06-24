@@ -1,17 +1,12 @@
-
-FROM python:3.13-slim
-
+FROM python:3.9-slim
 
 WORKDIR /app
 
-
 COPY . .
 
-
-RUN pip install --upgrade pip && pip install .
-
+# ✅ Install Flask and curl directly
+RUN pip install flask && apt-get update && apt-get install -y curl
 
 EXPOSE 8002
-
 
 CMD ["python", "app.py"]
